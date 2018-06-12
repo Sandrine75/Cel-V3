@@ -1,9 +1,195 @@
 
-/* ---------------------PAGE HOME --------------------------------*/ 
+/* ------------------------------------------BACKGROUND ---------------------------------------------*/ 
+#body {
+    background: rgb(10, 44, 56) none repeat scroll 0% 0%;
+    padding-top: 0px;
+    margin-top: 1px;
+    clear: both;
+    color: #AAA;
+    display: block        
+}
+/* Photo main portable */
+.photo_main {
+  background-repeat: no-repeat;
+  background-image: url("images/Photo main.png");	
+  background-position: 75% 20%; 
+  background-size: 30% 
+}
+
+ /* ---------------------------------menu login haut ---droite--------------------------------*/
+.box {
+  position: absolute;
+  vertical-align: middle;
+  color: #a0762e;
+  display: inline-block;
+  font-weight:bold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  font-family: "Arial", serif;
+  font-size: 12px;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 1px solid rgb(10, 44, 56);
+  -webkit-transition: 0.5s;
+}
+.box:hover {
+  border: 1px solid rgba(0, 160, 80, 0);
+  color: rgb(10, 44, 56);
+}
+.box::before,
+.box::after {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+.foo::before {
+  border-bottom: 1px solid #a0762e;
+  border-left: 1px solid #a0762e;
+  -webkit-transform-origin: 0 100%;
+}
+.foo::after {
+  border-top: 1px solid #a0762e;
+  border-right: 1px solid #a0762e;
+  -webkit-transform-origin: 100% 0%;
+}
+.box:hover::after,
+.box:hover::before {
+  -webkit-transform: scale(1);
+}
+/* --------------------------------------TEXTES ARTISTES MOUV---------------------------------------*/
+#container {
+  color:#a0762e;
+  font-size:66px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:static;
+  min-width:100%;
+  bottom:20%;
+  display:block;
+}
+#flip {
+  height:80px;
+  overflow:hidden;
+}
+#flip > div > div {
+  color:#a0762e;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+#flip div:first-child {
+  animation: show 6s linear infinite;
+}
+#flip div div {
+  background:rgb(10, 44, 56);
+}
+#flip div:first-child div {
+  background:rgb(10, 44, 56);
+}
+#flip div:last-child div {
+  background:rgb(10, 44, 56);
+}
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+p {
+  position:fixed;
+  width:100%;
+  bottom:50px;
+  font-size:20px;
+  color:#a0762e;
+  margin-top:200px;
+}
+ /*------------------------- celebetrip ecriture verticale gauche --------------------------------*/
+.text-vertical-span {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  top: 80vh;
+  left: 1%;
+  position: absolute;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: auto;
+  font-size: 2.5vh;
+  overflow: hidden;
+  transform: rotate(180deg);
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  font-size:12px;
+  color:#a0762e;
+}
+
+/* -----------------------------------------FOOTER HOME ----------------------------------------------*/
+.copyright {
+    color: #a0762e;
+    line-height: 30px;
+    min-height: 50px;
+    padding: 0px 0;
+    margin-bottom: 15px
+}
+#footer {  /* bloc entier */
+    border-top: 5px solid #a0762e; /* ligne horizontale */
+    background: #033649 none repeat scroll 0% 0%;
+    padding-top: 30px;
+    margin-top: 300px;
+    margin-bottom: 30px;
+    clear: both;
+    color: #AAA;
+    display: block;
+}
+#footer.widgettitle {
+    margin: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: medium none;
+}
+#footer h4 {
+    color: #a0762e;
+}
+#footer ul {
+    list-style: outside none none;
+}
+#footer li {
+    padding: 7px 0px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin: 0px;
+}
+#footer li a {
+    color: #AAA;
+}
+
+
 .logo
 { 
     background-color: rgb(215, 183, 99)
 }
+ 
+.tel
+ {
+float: right;
+     vertical-align: middle
+} 
+
 
 .entete
 { 
@@ -16,7 +202,6 @@
   color: rgb(215, 183, 99);
   text-align: center
 }
-
 .button 
 {
   background-color: rgb(10, 44, 56);
@@ -26,7 +211,6 @@
   text-align: center;
   margin: 0 0 30px 0
 }
-
 .operateur
 { 
   background-color: rgb(10, 44, 56);
@@ -35,7 +219,6 @@
   margin: 0;
   text-align: center
 }  
-
 .celebrites
 { 
   background-color: rgb(10, 44, 56);
@@ -46,8 +229,7 @@
   margin: 0;
   color: beige
 }
-
-/* -------------------page formulaire ---------------------------*/
+/* -----------------------------------------page formulaire -------------------------------------------*/
 .back
 { 
     background-color: rgb(215, 183, 99);
@@ -63,22 +245,18 @@
   color: rgb(215, 183, 99);
   text-align: center
 }
-
 .checkbox
 {
     width:50px
 }
-
 .inline 
 {
     display: inline-block;
 }
-
 .label 
 {
     min-width: 120px;
 }
-
 .titleprghp 
 {
     background:rgb(10, 44, 56);
@@ -90,43 +268,36 @@
     padding: 0 0 0 20px;
     margin: 20px 0 20px;
 }
-
-/* -------------------page celebrites ---------------------------*/
+/* -------------------------------------------page celebrites -----------------------------------------*/
 .background2
 { 
   background-color: rgb(10, 44, 56);
   color: rgb(215, 183, 99);
   text-align: center
 }
-
 .artiste
 {
 text-align: center;
 }
-
 .right_align
 {
     text-align: right;
     margin : 0px;
 }
-
 .left_align
 {
     text-align: left;
     margin : 0px;
 }
-
-/* -------------------GARGOUILLE1 ET 2 ---------------------------*/
+/* --------------------------------------GARGOUILLE1 ET 2 -----------------------------------------------*/
 .gar1{
 position:relative;
 height:400px
 }
-
 .gar2{
 position:absolute;
 z-index:1
 }
-
 .gartexte{
 position:absolute;
 top:80px;
@@ -134,109 +305,3 @@ width:600px;
 height:400px;
 z-index:2
 }
-
-
-/* -------------------FOOTER HOME ---------------------------*/
-.copyright {
-    color: #d7b700;
-    line-height: 30px;
-    min-height: 30px;
-    padding: 7px 0;
-}
-
-
-#footer {
-    border-top: 5px solid #d7b700;
-    background: #033649 none repeat scroll 0% 0%;
-    padding-top: 30px;
-    margin-top: 60px;
-    clear: both;
-    color: #AAA;
-    display: block;
-}
-
-#footer .widgettitle {
-    margin: 0px;
-    padding: 0px 0px 15px;
-    border-bottom: medium none;
-}
-#footer h4 {
-    color: #d7b700;
-}
-
-#footer ul {
-    list-style: outside none none;
-}
-
-#footer li {
-    padding: 7px 0px;
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-    margin: 0px;
-}
-
-#footer li a {
-    color: #DDD;
-}
-
-#sub-floor {
-    color: #AAA;
-    background: #0a2c36 none repeat scroll 0% 0%;
-    padding: 10px 0px;
-}
-
-
-/* -------------------CIRCUITS HUGO - SON UNIVERS---------------------------*/
-
-.hugobody
-{
-    background-color: rgb(240, 238, 226);
-    color: #AAA
-}
-
-.hugologo
-{ 
-    background-color: rgb(120, 123, 54);
-    border: solid 5px rgb(120, 123, 54)
-}
-
-.hugotextcentrer
-{
-    text-align: center;
-    color: rgb(120, 123, 54);
-    padding: 5px 5px 5px 5px
-}
-
-.hugotextjustify
-{
-    text-align: justify;
-    color: rgb(120, 123, 54);
-    padding: 5px 5px 5px 5px
-}
-
-
-
-#hugocadre
-{
-border: solid 1px rgb(120, 123, 54);
-}
-#cadre img
-{
-float:left;   
-}
-
-
-
-#hugocadre2
-{
-border: solid 4px rgb(120, 123, 54);
-margin-right: 10px;
-margin-left: 10px;
-}
-
-
-.map
-{
-margin-top: 25px;
-}
-
-
