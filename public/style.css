@@ -35,6 +35,24 @@
   border: 1px solid rgb(10, 44, 56);
   -webkit-transition: 0.5s;
 }
+.box {
+  position: absolute;
+  vertical-align: middle;
+  color: #a0762e;
+  display: inline-block;
+  font-weight:bold;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  font-family: "Arial", serif;
+  font-size: 12px;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 1px solid rgb(10, 44, 56);
+  -webkit-transition: 0.5s;
+}
 .box:hover {
   border: 1px solid rgba(0, 160, 80, 0);
   color: rgb(10, 44, 56);
@@ -52,6 +70,7 @@
   -webkit-transform: scale(0);
   transition: 0.5s;
 }
+
 .foo::before {
   border-bottom: 1px solid #a0762e;
   border-left: 1px solid #a0762e;
@@ -178,130 +197,127 @@ p {
     color: #AAA;
 }
 
-
-.logo
-{ 
-    background-color: rgb(215, 183, 99)
-}
- 
-.tel
- {
-float: right;
-     vertical-align: middle
-} 
+/* -----------------------------------------menu artistes----------------------------------------------*/
 
 
-.entete
-{ 
-  background-color: rgb(10, 44, 56);
-  margin-bottom: 80px;
-  font-family: "Open Sans", sans-serif;
-  padding: 5px 50px;
-  font-size: 32px;
-  margin: 0;
-  color: rgb(215, 183, 99);
-  text-align: center
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+    
 }
-.button 
-{
-  background-color: rgb(10, 44, 56);
-  color: rgb(215, 183, 99);
-  font-family: "Arial", serif;
-  font-size: 18px;
-  text-align: center;
-  margin: 0 0 30px 0
-}
-.operateur
-{ 
-  background-color: rgb(10, 44, 56);
-  background-size: 100%
-  padding: 0px 0px;
-  margin: 0;
-  text-align: center
-}  
-.celebrites
-{ 
-  background-color: rgb(10, 44, 56);
-  margin-bottom: 80px;
-  font-family: "Open Sans", sans-serif;
-  padding: 5px 50px;
-  font-size: 18px;
-  margin: 0;
-  color: beige
-}
-/* -----------------------------------------page formulaire -------------------------------------------*/
-.back
-{ 
-    background-color: rgb(215, 183, 99);
-    margin-bottom: 80px;
-    padding: 5px 50px;
-    margin: 0;
-    color: beige;
-    text-align: top     
-}
-.background3
-{ 
-  background-color: rgb(10, 44, 56);
-  color: rgb(215, 183, 99);
-  text-align: center
-}
-.checkbox
-{
-    width:50px
-}
-.inline 
-{
-    display: inline-block;
-}
-.label 
-{
-    min-width: 120px;
-}
-.titleprghp 
-{
-    background:rgb(10, 44, 56);
-    height: 46px;
-    color: white;
-    font-size: 23px;
-    height: 46px;
-    line-height: 40px;
-    padding: 0 0 0 20px;
-    margin: 20px 0 20px;
-}
-/* -------------------------------------------page celebrites -----------------------------------------*/
-.background2
-{ 
-  background-color: rgb(10, 44, 56);
-  color: rgb(215, 183, 99);
-  text-align: center
-}
-.artiste
-{
-text-align: center;
-}
-.right_align
-{
-    text-align: right;
-    margin : 0px;
-}
-.left_align
-{
-    text-align: left;
-    margin : 0px;
-}
-/* --------------------------------------GARGOUILLE1 ET 2 -----------------------------------------------*/
-.gar1{
+#menu-demo2 li{
+display:inline-block;
 position:relative;
-height:400px
+border-radius:8px 8px 0 0;
 }
-.gar2{
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
 position:absolute;
-z-index:1
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+-moz-transition: .8s all .3s;
+-webkit-transition: .8s all .3s;
+transition: .8s all .3s;
 }
-.gartexte{
-position:absolute;
-top:80px;
-width:600px;
-height:400px;
-z-index:2
+#menu-demo2 li:hover ul{
+max-height:15em;
 }
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #65537A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+#menu-demo2 li:nth-child(2){
+background-color: #729EBF;
+background-image: -webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+#menu-demo2 li:nth-child(3){
+background-color: #F6AD1A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+#menu-demo2 li:last-child{
+background-color: #CFFF6A;
+background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #a0762e 100%);
+background-image:linear-gradient(to bottom, #F6AD1A 0%, #a0762e 100%);
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#F6AD1A;
+}
+#menu-demo2 li:last-child li{
+background:#F6AD1A;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#F6AD1A;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#F6AD1A;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#fff;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#fff;
+text-transform:inherit;
+}
+#menu-demo2 li:hover a, #menu-demo2 li li:hover a{
+color:#000;
+}
+
+
+/** essai bande couleur jaune Page */
+.wrapper {
+  width: 100%;
+ height : 200px
+}
+.band {
+  color: rgb(10, 44, 56);
+  background-color: #a0762e;
+  margin-top: 200px
+}
+.content {
+  width: 900px;
+  max-width: 100%;
+  height : 384px;
+  max-height :30%;
+  margin: auto
+}
+
