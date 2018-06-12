@@ -285,7 +285,7 @@ lb:hover {
 .content {
   width: 900px;
   max-width: 100%;
-  height : 850px; /* hauteur de la bande jaune */
+  height : 930px; /* hauteur de la bande jaune */
   max-height :30%;
   margin: auto
 }
@@ -348,9 +348,15 @@ p.ex7{
     margin: 5px 0px 5px 0px;
     text-align: center;
     font-weight: Bold;
-    font-size: 20px;
+    font-size: 16px;
     color : #D7B763
 }
+p.ex8{
+    text-align: center;
+    font-weight: Bold;
+    font-size: 16px;
+    color:rgb(10, 44, 56);
+} 
 
 /* -----------------------------------------FOOTER HOME ----------------------------------------------*/
 .copyright {
