@@ -1,0 +1,242 @@
+
+/* ---------------------PAGE HOME --------------------------------*/ 
+.logo
+{ 
+    background-color: rgb(215, 183, 99)
+}
+
+.entete
+{ 
+  background-color: rgb(10, 44, 56);
+  margin-bottom: 80px;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 50px;
+  font-size: 32px;
+  margin: 0;
+  color: rgb(215, 183, 99);
+  text-align: center
+}
+
+.button 
+{
+  background-color: rgb(10, 44, 56);
+  color: rgb(215, 183, 99);
+  font-family: "Arial", serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 0 30px 0
+}
+
+.operateur
+{ 
+  background-color: rgb(10, 44, 56);
+  background-size: 100%
+  padding: 0px 0px;
+  margin: 0;
+  text-align: center
+}  
+
+.celebrites
+{ 
+  background-color: rgb(10, 44, 56);
+  margin-bottom: 80px;
+  font-family: "Open Sans", sans-serif;
+  padding: 5px 50px;
+  font-size: 18px;
+  margin: 0;
+  color: beige
+}
+
+/* -------------------page formulaire ---------------------------*/
+.back
+{ 
+    background-color: rgb(215, 183, 99);
+    margin-bottom: 80px;
+    padding: 5px 50px;
+    margin: 0;
+    color: beige;
+    text-align: top     
+}
+.background3
+{ 
+  background-color: rgb(10, 44, 56);
+  color: rgb(215, 183, 99);
+  text-align: center
+}
+
+.checkbox
+{
+    width:50px
+}
+
+.inline 
+{
+    display: inline-block;
+}
+
+.label 
+{
+    min-width: 120px;
+}
+
+.titleprghp 
+{
+    background:rgb(10, 44, 56);
+    height: 46px;
+    color: white;
+    font-size: 23px;
+    height: 46px;
+    line-height: 40px;
+    padding: 0 0 0 20px;
+    margin: 20px 0 20px;
+}
+
+/* -------------------page celebrites ---------------------------*/
+.background2
+{ 
+  background-color: rgb(10, 44, 56);
+  color: rgb(215, 183, 99);
+  text-align: center
+}
+
+.artiste
+{
+text-align: center;
+}
+
+.right_align
+{
+    text-align: right;
+    margin : 0px;
+}
+
+.left_align
+{
+    text-align: left;
+    margin : 0px;
+}
+
+/* -------------------GARGOUILLE1 ET 2 ---------------------------*/
+.gar1{
+position:relative;
+height:400px
+}
+
+.gar2{
+position:absolute;
+z-index:1
+}
+
+.gartexte{
+position:absolute;
+top:80px;
+width:600px;
+height:400px;
+z-index:2
+}
+
+
+/* -------------------FOOTER HOME ---------------------------*/
+.copyright {
+    color: #d7b700;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+
+
+#footer {
+    border-top: 5px solid #d7b700;
+    background: #033649 none repeat scroll 0% 0%;
+    padding-top: 30px;
+    margin-top: 60px;
+    clear: both;
+    color: #AAA;
+    display: block;
+}
+
+#footer .widgettitle {
+    margin: 0px;
+    padding: 0px 0px 15px;
+    border-bottom: medium none;
+}
+#footer h4 {
+    color: #d7b700;
+}
+
+#footer ul {
+    list-style: outside none none;
+}
+
+#footer li {
+    padding: 7px 0px;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    margin: 0px;
+}
+
+#footer li a {
+    color: #DDD;
+}
+
+#sub-floor {
+    color: #AAA;
+    background: #0a2c36 none repeat scroll 0% 0%;
+    padding: 10px 0px;
+}
+
+
+/* -------------------CIRCUITS HUGO - SON UNIVERS---------------------------*/
+
+.hugobody
+{
+    background-color: rgb(240, 238, 226);
+    color: #AAA
+}
+
+.hugologo
+{ 
+    background-color: rgb(120, 123, 54);
+    border: solid 5px rgb(120, 123, 54)
+}
+
+.hugotextcentrer
+{
+    text-align: center;
+    color: rgb(120, 123, 54);
+    padding: 5px 5px 5px 5px
+}
+
+.hugotextjustify
+{
+    text-align: justify;
+    color: rgb(120, 123, 54);
+    padding: 5px 5px 5px 5px
+}
+
+
+
+#hugocadre
+{
+border: solid 1px rgb(120, 123, 54);
+}
+#cadre img
+{
+float:left;   
+}
+
+
+
+#hugocadre2
+{
+border: solid 4px rgb(120, 123, 54);
+margin-right: 10px;
+margin-left: 10px;
+}
+
+
+.map
+{
+margin-top: 25px;
+}
+
+
