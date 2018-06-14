@@ -1,16 +1,16 @@
 # Cel-V3
-
-        
-                                                  PROJET CELEBETRIP
+ PROJET CELEBETRIP
                                                Login/Logout component
 
                                                   PROJET OPEN SOURCE
-__________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________
 
 Component 1 : https://github.com/Sandrine75/CelebetripOSS
 
 Component 2 : https://github.com/Sandrine75/CelebetripLogComponentOSS
-__________________________________________________________________________________________________________________________
+
+Formulaire base de données : https://celebetrip.herokuapp.com/
+________________________________________________________________________________________________________________
 
 
 Je suis interressée par des poolrequest :
@@ -19,24 +19,29 @@ Component 1 :
 
 
      1-  mettre le projet sous Heroku >> Cela a échoué jusqu'à présent >> revoir le code
-     voir réponse Mlab * >> le transfert des infos ne se fait pas sur la Bdd
      
      2-  anomalie dans le code : l'animation du texte déroulant fait sauter le site au bout de quelques instants. Trouver le bug.
 
-     3-  fusionner le composent 1 et 2 (component 1 = CelebetripOSS)
+     3-  fusionner le component 1 et 2 (component 1 = CelebetripOSS)
      
 Component 2 :
 
-     1-  mettre le projet sous Heroku >> Cela a échoué jusqu'à présent >> revoir le code
+     1-  les liens mlab (base de donnée) ne fonctionnenet plus. 
+     >> voir contacts mail avec Mlab *
+     La plateforme fonctionne mais le transfert vers la base de donnée ne se fait pas.
 
      2-  anomalie dans le code :  Au niveau du menu (bootstrap) les onglets des menus sont collés. A voir dans le code
      
      3-  création d'un dashboard en cours
 
 
-____________________________________________________________________________________________________________________________________
-* Réponse Mlab le 11/06/2018 :
 
+<img src="/images/SandrineGautier.png" alt="Sandrine Gautier"/>
+
+___________________________________________BUG MLAB______________________________________________
+
+* Contact Mlab
+______________
 Hello again,
 
 We are seeing successful connections to your "loginlogout" database, so this doesn't appear to be connectivity issue:
@@ -53,4 +58,26 @@ Please let us know if we can assist further.
 
 Kind regards,
 Sean@mLab
-_____________________________________________________________________________________________________________________________________
+
+____________________________________________SUITE BUG MLAB___________________________________________<br>
+Le message d'erreur dans la console est persistant :<br>
+
+(node:5524) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): MongoError: Authentication failed.
+(node:5524) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+QUID ? <br>
+______________________________________________BUG HEROKU____________________________________________<br>
+
+Manip Heroku :<br>
+$ cd my-project/<br>
+$ git init<br>
+$ heroku git:remote -a loginlogoutcelebetrip<br>
+$ git add .<br>
+$ git commit -am "make it better"<br>
+$ git push heroku master<br><br>
+
+Message dans la console :<br>
+
+To https://git.heroku.com/loginlogoutcelebetrip.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/loginlogoutcelebetrip.git'
