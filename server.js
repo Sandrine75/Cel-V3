@@ -12,7 +12,12 @@ app.get('/', function (req, res) {
 });
 
 
-app.listen(8081, function () {
-  console.log("Server listening on port 8081");
-});
+//app.listen(8081, function () {
+ // console.log("Server listening on port 8081");
+//});
 
+app.set('port', (process.env.PORT || 8080));
+
+app.listen(app.get('port'), function(){
+	console.log('Server started on port '+app.get('port'));
+});

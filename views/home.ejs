@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head prefix="og: http://ogp.me/ns#"> 
+      <!-- voir "open graph protocole" http://ogp.me -->
     <meta charset="utf-8">
+      <link rel="shortcut icon" href="images/favicon.png">
       <title>Celebetrip : découvrez Paris autrement</title>
-      <link rel="icon" type="image/png" href="celebetrippastille.png" />
+      
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#071e2f">
         <meta name="description" content="Celebetrip est une application mobile qui permet de découvrir Paris avec une célébrité d'hier ou d'aujourd'hui. Le Paris d'Hugo, le Paris de piaf, le paris de la Pévolution Française... Startup en développement.">
+        <meta name="keywords" content="Victor Hugo, Edith Piaf, Le Paris de, Emile Rodin,application mobile Paris, découvrir Paris, tourisme Paris" />
+        <meta name="author" content="Sandrine Gautier" />
         <link rel="stylesheet" href="style.css">
+      
+      <!-- pour les réseaux sociaux cf: http://www.balisemeta.com/   -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Celebetrip : découvrez Paris autrement">
+        <meta property="og:description" content="Celebetrip est une application mobile qui permet de découvrir Paris avec une célébrité d'hier ou d'aujourd'hui. Le Paris d'Hugo, le Paris de piaf, le paris de la Pévolution Française... Startup en développement.">
+        <meta property="og:image" content="http://celebetrip.com/images/logo.png">
+        <meta property="og:url" content="http://celebetrip.com">
 <!-- Bootstrap -->    
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -29,6 +40,13 @@
   
 <body id="body"> 
     <div class="clearfix"> 
+        
+<div>
+    <div class="absolute">
+    <img src="images/app store.png" margin="20px 30px 3px 150px" >
+    <img src="images/google play.png" margin="60px 30px 3px 150px">
+    </div>
+</div>
  <!---------PART 1 ------------------------Home Page----------------------------PART 1-------------------------------------------------------------------------------------------------->   
         <div class="photo_main">
         <!-- menu login haut droite -->  
@@ -142,7 +160,7 @@
                         <p class="ex3">Le concept </p>
                         <p class="ex4">Comment ça marche ? </p>
                         <div class="col-sm-3 col-md-3 col-lg-3 position:fixed">
-                            <img src="/images/tablette.png">
+                            <img src="/images/tablette.png" width="150px" height="150px" margin="10px 30px 3px 30px">
                             <p class="ex1">Téléchargez l'appli <br></p>
                             <p class="ex2">FAN d'une célébrité ? <br>Téléchargez l'appli sur votre smartphone pour Android et IOS (sept.) </p> 
                             <p class="ex5">C'est GRATUIT ! </p>  
@@ -152,7 +170,7 @@
                         </div>
                         
                         <div class="col-sm-3 col-md-3 col-lg-3 position:fixed">
-                            <img src="/images/ecrire.png">
+                            <img src="/images/ecrire.png" width="150px" height="150px" margin="10px 30px 3px 30px">
                             <p class="ex1">Rédigez <br></p>
                             <p class="ex2">De votre espace écrivez des anecdotes que seul vous connaissez, des histoires uniques  et partagez... <br>                          
                             </p> 
@@ -162,7 +180,7 @@
                         </div>
                         
                         <div class="col-sm-3 col-md-3 col-lg-3 position:fixed">
-                            <img src="/images/map.png">
+                            <img src="/images/map.png" width="150px" height="150px" margin="10px 30px 3px 30px">
                             <p class="ex1">Localisez<br></p>
                             <p class="ex2">Une fois géolocalisés, vous et la communauté allez pouvoir découvrir cette célébrité en se promenant dans Paris </p>
                             <p class="ex5">C'est SIMPLE ! </p> 
@@ -171,7 +189,7 @@
                         
                         
                         <div class="col-sm-3 col-md-3 col-lg-3 position:fixed">
-                            <img src="/images/tel.png">
+                            <img src="/images/tel.png" width="150px" height="150px" margin="10px 30px 3px 30px">
                             <p class="ex1">Découvrez  </p>
                             <p class="ex2">Il ne vous reste plus qu'à visiter Paris autrement avec tous les secrets d'une célébrité</p>
                             <p class="ex5">C'est PARIS ! </p> 

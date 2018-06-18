@@ -294,12 +294,7 @@ lb:hover {
 }
 
 
-img {
-	width: 150px;
-	height: 150px;
-    margin: 10px 30px 3px 30px;
-    
-}
+
 /* ------------------------textes des bulles tester celebetrip----------------------------------------*/
 
 p.ex1{
@@ -424,3 +419,12 @@ lb {
 
 lb:hover {
   background-position:0 0}
+
+
+div.absolute {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 200px;
+    height: 100px;
+}
